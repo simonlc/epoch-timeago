@@ -1,0 +1,18 @@
+{
+  "name": "epoch-ago",
+  "version": "1.0.0",
+  "author": "Simon Laroche <hi@simon.lc> (https://simon.lc)",
+  "license": "ISC",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-preset-env": "^1.1.8",
+    "coveralls": "^2.11.16",
+    "nyc": "^10.1.2"
+  }
+}
