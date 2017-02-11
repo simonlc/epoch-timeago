@@ -52,6 +52,8 @@ const epochTimeStamp = Date.now() - 60000 * 22;
 <TimeAgo time={epochTimeStamp} />
 ```
 
+## License MIT
+
 [npm]: https://img.shields.io/npm/v/epoch-timeago.svg
 [npm-url]: https://npmjs.com/package/epoch-timeago
 
