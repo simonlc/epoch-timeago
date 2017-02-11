@@ -1,9 +1,23 @@
 {
-  "name": "epoch-ago",
+  "name": "epoch-timeago",
   "version": "1.0.0",
   "author": "Simon Laroche <hi@simon.lc> (https://simon.lc)",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
+  "description": "Convert unix time to a relative time string e.g., 4 hours ago.",
+  "repository": "simonlc/epoch-timeago",
+  "keywords": [
+    "timeago",
+    "time",
+    "ago",
+    "epoch",
+    "unix",
+    "date",
+    "relative",
+    "timestamp",
+    "milliseconds",
+    "moment",
+    "microformat"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
