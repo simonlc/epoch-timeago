@@ -23,9 +23,9 @@ Examples:
 
 ## Usage
 
-Simply pass
+Simply pass a unix timestamp, and get a time ago formated string.
 
-```js
+```jsx
 import timeAgo form 'epoch-timeago';
 
 const timeSince = timeAgo(Date.now() - 60000 * 10);
@@ -34,7 +34,7 @@ const timeSince = timeAgo(Date.now() - 60000 * 10);
 
 ### In React
 
-```js
+```jsx
 import React from 'react';
 import timeAgo form 'epoch-timeago';
 
