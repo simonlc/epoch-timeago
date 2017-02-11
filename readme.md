@@ -7,7 +7,7 @@
 
 As the name implies, only epoch time (unix time) can be used. There is zero configuration. The output format is similar to what you would find on Reddit.
 
-Minifies to ~800 bytes, and gzips to under **400 bytes**.
+Minifies to ~700 bytes, and gzips to under **370 bytes**. 😎
 
 ## Examples:
 
