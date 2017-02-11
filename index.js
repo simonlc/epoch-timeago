@@ -16,23 +16,18 @@ function constructTimeString(unit, singularString, time, timeIndex) {
   }
 }
 
-const minutes = constructTimeString.bind(null, 'minute', 'a minute ago');
-const hours = constructTimeString.bind(null, 'hour', 'an hour ago');
-const days = constructTimeString.bind(null, 'day', '1 day ago');
-const weeks = constructTimeString.bind(null, 'week', '1 week ago');
-const months = constructTimeString.bind(null, 'month', '1 month ago');
-const years = constructTimeString.bind(null, 'year', '1 year ago');
-
 const timeFunctions = [
   () => 'just now',
-  minutes,
-  hours,
-  days,
-  weeks,
-  months,
-  years,
+  constructTimeString.bind(null, 'minute', 'a minute ago'),
+  constructTimeString.bind(null, 'hour', 'an hour ago'),
+  constructTimeString.bind(null, 'day', '1 day ago'),
+  constructTimeString.bind(null, 'week', '1 week ago'),
+  constructTimeString.bind(null, 'month', '1 month ago'),
+  constructTimeString.bind(null, 'year', '1 year ago'),
 ];
 
+// We include our own binary search because we have more control over how 
+// the index is picked.
 function binarySearchInsert(array, value) {
   let low = 0;
   let high = array.length;
