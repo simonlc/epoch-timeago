@@ -5,9 +5,9 @@
 [![Build][build]][build-badge]
 [![Coverage][cover]][cover-badge]
 
-As the name implies, only epoch time (unix time) can be used. There is zero configuration.
+As the name implies, only epoch time (unix time) can be used. There is zero configuration. The output format is similar to what you would find on Reddit.
 
-Examples:
+## Examples:
 
 - **seconds** > just now
 - **minutes** > a minute ago, 15 minutes ago

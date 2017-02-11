@@ -7,6 +7,11 @@ test('should return seconds string with negative number', t => {
   t.is(value, 'just now');
 });
 
+test('should return seconds string with negative number', t => {
+  const value = epochAgo(String(Date.now() - 6.048e+8 * 2));
+  t.is(value, '2 weeks ago');
+});
+
 // Regular cases
 test('should return seconds string', t => {
   const value = epochAgo(Date.now());
