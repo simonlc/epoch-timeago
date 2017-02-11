@@ -1,3 +1,5 @@
+'use strict';
+
 const times = [
   60000,
   3.6e+6,
