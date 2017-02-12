@@ -1,5 +1,6 @@
 # for npm
 test.js
+.travis.yml
 
 # Logs
 logs
