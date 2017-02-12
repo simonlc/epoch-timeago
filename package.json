@@ -20,7 +20,7 @@
   ],
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava",
+    "test": "nyc ava -v",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
