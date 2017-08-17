@@ -102,24 +102,6 @@
       ]
     },
     {
-      "component": "header",
-      "heading": "epoch-timeago",
-      "subhead": "🕓 Convert unix time to a relative time string e.g., 4 hours ago.",
-      "children": [
-        {
-          "component": "ui/TweetButton",
-          "text": "epoch-timeago: 🕓 Convert unix time to a relative time string e.g., 4 hours ago.",
-          "url": ""
-        },
-        {
-          "component": "ui/GithubButton",
-          "user": "simonlc",
-          "repo": "epoch-timeago"
-        }
-      ],
-      "text": "v1.0.3"
-    },
-    {
       "component": "article",
       "metadata": {
         "source": "github.readme"
