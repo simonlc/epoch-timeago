@@ -5,11 +5,11 @@
 [![Build][build]][build-badge]
 [![Coverage][cover]][cover-badge]
 
-Convert unix time to a relative time string e.g., 4 hours ago.
+Convert unix time to a relative time string e.g., "4 hours ago".
 
 As the name implies, only epoch time (unix time) can be used. The output format is similar to what you would find on Reddit.
 
-There is zero configuration. Zero dependencies. Minifies to ~700 bytes, and gzips to under **370 bytes**. 😎
+There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips to **267 bytes**. 😎
 
 
 ## Examples:
@@ -46,13 +46,15 @@ import timeAgo form 'epoch-timeago';
 const TimeAgo = ({ time }) =>
   <time datetime={new Date(time).toISOString()}>{timeAgo(time)}</time>
 
-...
+// ...
 
 const epochTimeStamp = Date.now() - 60000 * 22;
 <TimeAgo time={epochTimeStamp} />
 ```
 
-## License MIT
+## License
+
+MIT
 
 [npm]: https://img.shields.io/npm/v/epoch-timeago.svg
 [npm-url]: https://npmjs.com/package/epoch-timeago
