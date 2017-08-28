@@ -1,0 +1,125 @@
+{
+  "name": "simonlc/epoch-timeago",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/simonlc/epoch-timeago",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/epoch-timeago",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Epoch TimeAgo</h1>\n<p><a href=\"https://npmjs.com/package/epoch-timeago\"><img src=\"https://img.shields.io/npm/v/epoch-timeago.svg\"></a>\n<a href=\"https://david-dm.org/simonlc/posthtm-minify-classnames\"><img src=\"https://david-dm.org/simonlc/epoch-timeago.svg\"></a>\n<a href=\"https://travis-ci.org/simonlc/epoch-timeago?branch=master\"><img src=\"https://travis-ci.org/simonlc/epoch-timeago.svg?branch=master\"></a>\n<a href=\"https://coveralls.io/github/simonlc/epoch-timeago?branch=master\"><img src=\"https://coveralls.io/repos/github/simonlc/epoch-timeago/badge.svg?cache\"></a></p>\n<p>Convert unix time to a relative time string e.g., 4 hours ago.</p>\n<p>As the name implies, only epoch time (unix time) can be used. The output format is similar to what you would find on Reddit.</p>\n<p>There is zero configuration. Zero dependencies. Minifies to ~700 bytes, and gzips to under <strong>370 bytes</strong>. &#x1F60E;</p>\n<h2>Examples:</h2>\n<ul>\n<li><strong>seconds</strong> &gt; just now</li>\n<li><strong>minutes</strong> &gt; a minute ago, 15 minutes ago</li>\n<li><strong>hours</strong> &gt; an hour ago, 2 hours ago</li>\n<li><strong>days</strong> &gt; 1 day ago, 2 days ago</li>\n<li><strong>weeks</strong> &gt; 1 week ago, 3 weeks ago</li>\n<li><strong>months</strong> &gt; 1 month ago, 5 months ago</li>\n<li><strong>years</strong> &gt; 1 year ago, 2 years ago</li>\n</ul>\n<h2>Install</h2>\n<p><code>npm install -S epoch-timeago</code></p>\n<h2>Usage</h2>\n<p>Simply pass a unix timestamp, and get a time ago formated string.</p>\n<pre><span class=\"hljs-keyword\">import</span> timeAgo form <span class=\"hljs-string\">&apos;epoch-timeago&apos;</span>;\n\n<span class=\"hljs-keyword\">const</span> timeSince = timeAgo(<span class=\"hljs-built_in\">Date</span>.now() - <span class=\"hljs-number\">60000</span> * <span class=\"hljs-number\">10</span>);\n<span class=\"hljs-comment\">// &apos;10 minutes ago&apos;</span></pre><h3>In React</h3>\n<pre>import React from &apos;react&apos;;\nimport timeAgo form &apos;epoch-timeago&apos;;\n\nconst TimeAgo = ({ time }) =&gt;\n  &lt;time datetime={new Date(time).toISOString()}&gt;{timeAgo(time)}&lt;/time&gt;\n\n...\n\nconst epochTimeStamp = Date.now() - 60000 * 22;\n&lt;TimeAgo time={epochTimeStamp} /&gt;</pre><h2>License MIT</h2>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/simonlc/epoch-timeago",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/simonlc",
+          "text": "simonlc"
+        }
+      ]
+    }
+  ]
+}
