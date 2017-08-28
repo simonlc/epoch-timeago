@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "author": "Simon Laroche <hi@simon.lc> (https://simon.lc)",
   "license": "MIT",
-  "description": "Convert unix time to a relative time string e.g., 4 hours ago.",
+  "description": "Convert unix time to a relative time string e.g., \"4 hours ago\".",
   "repository": "simonlc/epoch-timeago",
   "keywords": [
     "timeago",
@@ -25,8 +25,8 @@
   },
   "devDependencies": {
     "ava": "^0.18.1",
-    "babel-preset-env": "^1.1.8",
     "coveralls": "^2.11.16",
     "nyc": "^10.1.2"
-  }
+  },
+  "false": {}
 }
