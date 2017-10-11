@@ -31,7 +31,7 @@ There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips
 Simply pass a unix timestamp, and get a time ago formated string.
 
 ```jsx
-import timeAgo form 'epoch-timeago';
+import timeAgo from 'epoch-timeago';
 
 const timeSince = timeAgo(Date.now() - 60000 * 10);
 // '10 minutes ago'
