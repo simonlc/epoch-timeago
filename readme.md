@@ -41,7 +41,7 @@ const timeSince = timeAgo(Date.now() - 60000 * 10);
 
 ```jsx
 import React from 'react';
-import timeAgo form 'epoch-timeago';
+import timeAgo from 'epoch-timeago';
 
 const TimeAgo = ({ time }) =>
   <time datetime={new Date(time).toISOString()}>{timeAgo(time)}</time>
