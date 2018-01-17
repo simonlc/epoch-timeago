@@ -28,11 +28,17 @@ There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips
 
 ## Usage
 
-Simply pass a unix timestamp, and get a time ago formated string.
+Simply pass a unix timestamp *converted to milliseconds* (`timestamp * 1000`) and get a time ago formatted string.
+
+The reason of converting is simple, the base unit of time in JavaScript is milliseconds(ms) while Unix Timestamp is in seconds. Therefore need to multiply Unix Timestamp by `1000` in order to get relative time.
 
 ```jsx
 import timeAgo from 'epoch-timeago';
 
+// Example of simple usage
+const timeDiff = timeAgo(timestamp * 1000)
+
+//Example of formatted string
 const timeSince = timeAgo(Date.now() - 60000 * 10);
 // '10 minutes ago'
 ```
