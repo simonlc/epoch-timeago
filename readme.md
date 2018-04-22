@@ -5,9 +5,9 @@
 [![Build][build]][build-badge]
 [![Coverage][cover]][cover-badge]
 
-Convert unix time to a relative time string e.g., "4 hours ago".
+Convert Unix time to a relative time string e.g., "4 hours ago".
 
-As the name implies, only epoch time (unix time) can be used. The output format is similar to what you would find on Reddit.
+As the name implies, only epoch time (Unix time) can be used. The output format is similar to what you would find on Reddit.
 
 There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips to **267 bytes**. 😎
 
@@ -28,9 +28,7 @@ There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips
 
 ## Usage
 
-Simply pass a unix timestamp *converted to milliseconds* (`timestamp * 1000`) and get a time ago formatted string.
-
-The reason of converting is simple, the base unit of time in JavaScript is milliseconds(ms) while Unix Timestamp is in seconds. Therefore need to multiply Unix Timestamp by `1000` in order to get relative time.
+Simply pass a Unix time stamp *converted to milliseconds* (`timestampInSeconds * 1000`) and get a time ago formatted string. If your timestamps are in milliseconds no conversion is necessary.
 
 ```jsx
 import timeAgo from 'epoch-timeago';
