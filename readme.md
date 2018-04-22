@@ -24,6 +24,10 @@ There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips
 
 ## Install
 
+`yarn add epoch-timeago`
+
+or
+
 `npm install -S epoch-timeago`
 
 ## Usage
