@@ -9,7 +9,7 @@ Convert Unix time to a relative time string e.g., "4 hours ago".
 
 As the name implies, only epoch time (Unix time) can be used. The output format is similar to what you would find on Reddit.
 
-There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips to **267 bytes**. 😎
+There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips to **224 bytes**. 😎
 
 
 ## Examples:
