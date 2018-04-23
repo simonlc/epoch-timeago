@@ -1,3 +1,7 @@
+#project
+.babelrc
+yarn.lock
+
 # git
 .gitkeep
 
