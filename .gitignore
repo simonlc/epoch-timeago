@@ -1,3 +1,13 @@
+# build direcotry
+es/*
+!es/.gitkeep
+
+dist/*
+!dist/.gitkeep
+
+lib/*
+!lib/.gitkeep
+
 # Logs
 logs
 *.log
