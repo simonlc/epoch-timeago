@@ -29,12 +29,6 @@
     "test": "npm run build && nyc ava -v",
     "coverage": "npm run build && nyc report --reporter=text-lcov | coveralls"
   },
-  "files": [
-    "dist",
-    "lib",
-    "es",
-    "src"
-  ],
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.44",
     "@babel/core": "7.0.0-beta.44",
