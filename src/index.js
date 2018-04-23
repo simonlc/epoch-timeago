@@ -1,5 +1,3 @@
-'use strict';
-
 const timeSegments = [
   3.154e10,
   2.628e9,
@@ -13,7 +11,7 @@ const timeSegments = [
 const makeTimeString = (unit, singularString) => (timeSegment, time) =>
   time >= 2 * timeSegment
     ? `${Math.floor(time / timeSegment)} ${unit}s ago`
-    : singularString
+    : singularString;
 
 const timeFunctions = [
   makeTimeString('year', '1 year ago'),
@@ -25,11 +23,9 @@ const timeFunctions = [
   () => 'just now',
 ];
 
-function epochAgo(timeStamp) {
+export default function epochAgo(timeStamp) {
   const timeDifference = Date.now() - timeStamp;
   const index = timeSegments.findIndex(time => timeDifference >= time);
   const timeAgo = timeFunctions[index](timeSegments[index], timeDifference);
   return timeAgo;
 }
-
-module.exports = epochAgo;

@@ -1,0 +1,35 @@
+{
+  "env": {
+    "commonjs": {
+      "presets": [
+        ["minify",
+          { "mangle": { "topLevel": true }}
+        ],
+        ["@babel/preset-env", {
+          "forceAllTransforms": true,
+          "modules": "commonjs",
+          "spec": true
+        }]
+      ]
+    },
+    "umd": {
+      "presets": [
+        ["minify",
+          { "mangle": { "topLevel": true }}
+        ],
+        ["@babel/preset-env", {
+          "forceAllTransforms": true,
+          "modules": "umd",
+          "spec": true
+        }]
+      ]
+    },
+    "es": {
+      "presets": [
+        ["minify",
+          { "mangle": { "topLevel": true }}
+        ]
+      ]
+    }
+  }
+}

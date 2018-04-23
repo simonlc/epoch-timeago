@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "author": "Simon Laroche <hi@simon.lc> (https://simon.lc)",
   "license": "MIT",
-  "description": "Convert unix time to a relative time string e.g., \"4 hours ago\".",
+  "description": "Convert Unix time to a relative time string e.g., \"4 hours ago\".",
   "repository": "simonlc/epoch-timeago",
   "keywords": [
     "timeago",
@@ -18,15 +18,30 @@
     "moment",
     "microformat"
   ],
-  "main": "index.js",
+  "main": "lib/index.js",
+  "browser": "dist/index.js",
+  "module": "es/index.js",
   "scripts": {
-    "test": "nyc ava -v",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "build": "npm run build:es && npm run build:commonjs && npm run build:dist",
+    "build:es": "BABEL_ENV=es babel src/index.js --out-file es/index.js",
+    "build:commonjs": "BABEL_ENV=commonjs babel src/index.js --out-file lib/index.js",
+    "build:dist": "BABEL_ENV=umd babel src/index.js --out-file dist/index.js",
+    "test": "npm run build && nyc ava -v",
+    "coverage": "npm run build && nyc report --reporter=text-lcov | coveralls"
   },
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src"
+  ],
   "devDependencies": {
+    "@babel/cli": "7.0.0-beta.44",
+    "@babel/core": "7.0.0-beta.44",
+    "@babel/preset-env": "7.0.0-beta.44",
     "ava": "^0.18.1",
+    "babel-minify": "0.4.0",
     "coveralls": "^2.11.16",
     "nyc": "^10.1.2"
-  },
-  "false": {}
+  }
 }

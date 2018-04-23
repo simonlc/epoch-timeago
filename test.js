@@ -1,5 +1,5 @@
 import test from 'ava';
-import epochAgo from './index';
+import epochAgo from './es/index';
 
 // Irregular cases
 test('future date', t => {
