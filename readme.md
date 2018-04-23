@@ -29,12 +29,14 @@ or
 
 `npm install -S epoch-timeago`
 
+The default build selected will depend on your bundle tool configuration. By default webpack will get the UMD build, and Rollup the esm build. If you want to override this use the following paths:
+
 - UMD build available at `'epoch-timeago/dist'`,
 - Commonjs build available at `'epoch-timeago/lib'`,
 - esm build (ES6+ only) available at `'epoch-timeago/es'`.
 - Source (ES6+ only) available at `'epoch-timeago/src'`.
 
-Builds are all minified
+NOTE: Builds are all minified.
 
 ## Usage
 
