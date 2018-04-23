@@ -11,7 +11,6 @@ As the name implies, only epoch time (Unix time) can be used. The output format 
 
 There is zero configuration. Zero dependencies. Minifies to 435 bytes, and gzips to **224 bytes**. 😎
 
-
 ## Examples:
 
 - **seconds** > just now
@@ -30,18 +29,25 @@ or
 
 `npm install -S epoch-timeago`
 
+- UMD build available at `'epoch-timeago/dist'`,
+- Commonjs build available at `'epoch-timeago/lib'`,
+- esm build (ES6+ only) available at `'epoch-timeago/es'`.
+- Source (ES6+ only) available at `'epoch-timeago/src'`.
+
+Builds are all minified
+
 ## Usage
 
 Simply pass a Unix time stamp *converted to milliseconds* (`timestampInSeconds * 1000`) and get a time ago formatted string. If your timestamps are in milliseconds no conversion is necessary.
 
 ```jsx
-import timeAgo from 'epoch-timeago';
+import timeago from 'epoch-timeago';
 
 // Example of simple usage
-const timeDiff = timeAgo(timestamp * 1000)
+const timeDiff = timeago(timestamp * 1000)
 
 //Example of formatted string
-const timeSince = timeAgo(Date.now() - 60000 * 10);
+const timeSince = timeago(Date.now() - 60000 * 10);
 // '10 minutes ago'
 ```
 
@@ -49,10 +55,10 @@ const timeSince = timeAgo(Date.now() - 60000 * 10);
 
 ```jsx
 import React from 'react';
-import timeAgo from 'epoch-timeago';
+import timeago from 'epoch-timeago';
 
 const TimeAgo = ({ time }) =>
-  <time datetime={new Date(time).toISOString()}>{timeAgo(time)}</time>
+  <time datetime={new Date(time).toISOString()}>{timeago(time)}</time>
 
 // ...
 
