@@ -22,20 +22,20 @@
   "browser": "dist/index.js",
   "module": "es/index.js",
   "scripts": {
-    "build": "npm run build:es && npm run build:commonjs && npm run build:dist",
+    "build": "yarn build:es && yarn build:commonjs && yarn build:dist",
     "build:es": "BABEL_ENV=es babel src/index.js --out-file es/index.js",
     "build:commonjs": "BABEL_ENV=commonjs babel src/index.js --out-file lib/index.js",
     "build:dist": "BABEL_ENV=umd babel src/index.js --out-file dist/index.js",
-    "test": "npm run build && nyc ava -v",
-    "coverage": "npm run build && nyc report --reporter=text-lcov | coveralls"
+    "test": "yarn build && nyc ava -v",
+    "coverage": "yarn build && nyc report --reporter=text-lcov | coveralls"
   },
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.44",
     "@babel/core": "7.0.0-beta.44",
     "@babel/preset-env": "7.0.0-beta.44",
-    "ava": "^0.18.1",
-    "babel-minify": "0.4.0",
-    "coveralls": "^2.11.16",
-    "nyc": "^10.1.2"
+    "ava": "0.25.0",
+    "babel-minify": "0.4.3",
+    "coveralls": "3.0.2",
+    "nyc": "12.0.2"
   }
 }
