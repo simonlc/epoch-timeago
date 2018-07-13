@@ -937,7 +937,7 @@ ava-init@^0.2.0:
     read-pkg-up "^2.0.0"
     write-pkg "^3.1.0"
 
-ava@~0.25.0:
+ava@0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/ava/-/ava-0.25.0.tgz#8ac87780514f96a6fd42e1306eaa0752ce3a407f"
   dependencies:
@@ -1186,7 +1186,7 @@ babel-messages@^6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-minify@~0.4.3:
+babel-minify@0.4.3:
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/babel-minify/-/babel-minify-0.4.3.tgz#d947e4ed6b626dc8c25687f242c25cbcf6f281a6"
   dependencies:
@@ -1907,7 +1907,7 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-coveralls@~3.0.2:
+coveralls@3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/coveralls/-/coveralls-3.0.2.tgz#f5a0bcd90ca4e64e088b710fa8dda640aea4884f"
   dependencies:
@@ -2113,6 +2113,10 @@ es6-error@^4.0.1, es6-error@^4.0.2:
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.4, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
+
+esm@3.0.69:
+  version "3.0.69"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.69.tgz#4ce2b06ec32742b28cca1c2187318f8563fb3cb8"
 
 espower-location-detector@^1.0.0:
   version "1.0.0"
@@ -3479,7 +3483,7 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nyc@~12.0.2:
+nyc@12.0.2:
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/nyc/-/nyc-12.0.2.tgz#8a4a4ed690966c11ec587ff87eea0c12c974ba99"
   dependencies:

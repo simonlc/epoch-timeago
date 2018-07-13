@@ -5,6 +5,11 @@
   "license": "MIT",
   "description": "Convert Unix time to a relative time string e.g., \"4 hours ago\".",
   "repository": "simonlc/epoch-timeago",
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  },
   "keywords": [
     "timeago",
     "time",
@@ -36,6 +41,7 @@
     "ava": "0.25.0",
     "babel-minify": "0.4.3",
     "coveralls": "3.0.2",
+    "esm": "3.0.69",
     "nyc": "12.0.2"
   }
 }
