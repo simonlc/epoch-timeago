@@ -1,6 +1,8 @@
 # Epoch TimeAgo
 
 [![NPM][npm]][npm-url]
+[![npm bundle size (minified + gzip)][minzip]][minzip-url]
+![](https://img.shields.io/npm/dt/epoch-timeago.svg)
 [![Deps][deps]][deps-url]
 [![Build][build]][build-badge]
 [![Coverage][cover]][cover-badge]
@@ -76,10 +78,13 @@ MIT
 [npm-url]: https://npmjs.com/package/epoch-timeago
 
 [deps]: https://david-dm.org/simonlc/epoch-timeago.svg
-[deps-url]: https://david-dm.org/simonlc/posthtm-minify-classnames
+[deps-url]: https://david-dm.org/simonlc/epoch-timeago
 
 [build]: https://travis-ci.org/simonlc/epoch-timeago.svg?branch=master
 [build-badge]: https://travis-ci.org/simonlc/epoch-timeago?branch=master
 
 [cover]: https://coveralls.io/repos/github/simonlc/epoch-timeago/badge.svg?cache
 [cover-badge]: https://coveralls.io/github/simonlc/epoch-timeago?branch=master
+
+[minzip]: https://img.shields.io/bundlephobia/minzip/epoch-timeago.svg
+[minzip-url]: https://bundlephobia.com/result?p=epoch-timeago
