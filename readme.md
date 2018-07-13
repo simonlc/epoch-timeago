@@ -2,7 +2,7 @@
 
 [![NPM][npm]][npm-url]
 [![npm bundle size (minified + gzip)][minzip]][minzip-url]
-![](https://img.shields.io/npm/dt/epoch-timeago.svg)
+![npm downloads](https://img.shields.io/npm/dt/epoch-timeago.svg)
 [![Deps][deps]][deps-url]
 [![Build][build]][build-badge]
 [![Coverage][cover]][cover-badge]
