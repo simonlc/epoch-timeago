@@ -1,6 +1,6 @@
 {
   "name": "epoch-timeago",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "author": "Simon Laroche <hi@simon.lc> (https://simon.lc)",
   "license": "MIT",
   "description": "Convert Unix time to a relative time string e.g., \"4 hours ago\".",
